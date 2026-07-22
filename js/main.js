@@ -145,26 +145,6 @@
     restart();
   }
 
-  /* ---------- Reservation form ---------- */
-  const form = document.getElementById("reserve-form");
-  if (form) {
-    const dateInput = document.getElementById("r-date");
-    dateInput.min = new Date().toISOString().split("T")[0];
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-
-      const name = document.getElementById("r-name").value.trim().split(" ")[0];
-      const success = document.getElementById("reserve-success");
-      document.getElementById("success-name").textContent = name ? `, ${name}` : "";
-
-      form.hidden = true;
-      success.hidden = false;
-      success.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "center" });
-    });
-  }
-
   /* ---------- Placeholder image fallback ----------
      If a remote placeholder fails to load (offline, URL retired),
      swap in a branded stone-and-crest tile so the layout never breaks. */

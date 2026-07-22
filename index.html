@@ -44,7 +44,7 @@
       </nav>
 
       <div class="site-header__actions">
-        <a class="btn btn--solid btn--sm" href="#reserve">Reserve&nbsp;Table</a>
+        <a class="btn btn--solid btn--sm" href="#contact">Reserve&nbsp;Table</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-overlay" aria-label="Open menu">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
@@ -65,7 +65,7 @@
       </ul>
     </nav>
     <div class="menu-overlay__foot" style="--i:5">
-      <a class="btn btn--glow" href="#reserve">Reserve Table</a>
+      <a class="btn btn--glow" href="#contact">Reserve Table</a>
       <p>Ras Beit Jala · Arab Society Street<br><span dir="rtl" lang="ar">راس بيت جالا — شارع الجمعية العربية</span></p>
     </div>
   </div>
@@ -100,7 +100,7 @@
         slow coffee, and sunsets that stay for dessert.</p>
 
         <div class="hero__actions">
-          <a class="btn btn--glow" href="#reserve">Reserve Table</a>
+          <a class="btn btn--glow" href="#contact">Reserve Table</a>
           <a class="btn btn--ghost" href="#menu">View Menu</a>
         </div>
       </div>
@@ -310,16 +310,6 @@
                 the fire. Savana feels like a celebration every single time.”</blockquote>
                 <figcaption>Elias Handal <span>· Beit Jala</span></figcaption>
               </figure>
-              <figure class="quote">
-                <blockquote>“I've eaten on three continents this year. The smoked
-                ribs here are the dish I still think about.”</blockquote>
-                <figcaption>Lena Hoffmann <span>· Berlin</span></figcaption>
-              </figure>
-              <figure class="quote">
-                <blockquote>“The terrace at dusk is pure magic — half the city
-                glowing below you, coffee in hand.”</blockquote>
-                <figcaption>Omar Nasser <span>· Ramallah</span></figcaption>
-              </figure>
             </div>
 
             <div class="quotes__nav">
@@ -327,67 +317,6 @@
               <div class="quotes__dots" role="tablist" aria-label="Testimonials"></div>
               <button class="quotes__btn" type="button" data-next aria-label="Next testimonial">→</button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reserve" id="reserve" aria-labelledby="reserve-title">
-        <div class="container reserve__grid">
-          <header class="reserve__head reveal">
-            <p class="eyebrow eyebrow--bright">Join us</p>
-            <h2 id="reserve-title">Reserve your evening</h2>
-            <p class="reserve__lede">Sunset tables on the terrace are the first to go.
-            Tell us when, and we'll keep the view warm for you.</p>
-            <p class="reserve__phone">Prefer to call?
-              <a href="tel:+97022741234">+970&nbsp;2&nbsp;274&nbsp;1234</a></p>
-          </header>
-
-          <form class="reserve__form reveal" id="reserve-form" novalidate style="--d:.1s">
-            <div class="field">
-              <label for="r-name">Full name</label>
-              <input id="r-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
-            </div>
-            <div class="field">
-              <label for="r-phone">Phone</label>
-              <input id="r-phone" name="phone" type="tel" autocomplete="tel" placeholder="+970 …" required>
-            </div>
-            <div class="field">
-              <label for="r-date">Date</label>
-              <input id="r-date" name="date" type="date" required>
-            </div>
-            <div class="field">
-              <label for="r-time">Time</label>
-              <input id="r-time" name="time" type="time" min="09:00" max="23:30" required>
-            </div>
-            <div class="field">
-              <label for="r-guests">Guests</label>
-              <select id="r-guests" name="guests" required>
-                <option value="2" selected>2 guests</option>
-                <option value="3">3 guests</option>
-                <option value="4">4 guests</option>
-                <option value="5">5 guests</option>
-                <option value="6">6 guests</option>
-                <option value="8">8+ — celebration</option>
-              </select>
-            </div>
-            <div class="field field--full">
-              <label for="r-notes">Notes <em>(optional)</em></label>
-              <textarea id="r-notes" name="notes" rows="2" placeholder="Anniversary, terrace preference, allergies…"></textarea>
-            </div>
-            <button class="btn btn--glow field--full" type="submit">Request Reservation</button>
-            <p class="reserve__fineprint field--full">We confirm every request by phone within the hour.</p>
-          </form>
-
-          <div class="reserve__success" id="reserve-success" hidden>
-            <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-              <path d="M32 4c4.5 9.5 8.5 18.5 0 32C23.5 22.5 27.5 13.5 32 4Z"/>
-              <path d="M12 18c10 2 17 8 18.6 19C19 35 12 28.5 12 18Z"/>
-              <path d="M52 18c-10 2-17 8-18.6 19C45 35 52 28.5 52 18Z"/>
-              <rect x="20" y="42" width="24" height="5" rx="2.5"/>
-              <rect x="25" y="50" width="14" height="4" rx="2"/>
-            </svg>
-            <h3>Shukran<span id="success-name"></span>!</h3>
-            <p>Your request is with us. We'll call to confirm your table shortly.</p>
           </div>
         </div>
       </section>

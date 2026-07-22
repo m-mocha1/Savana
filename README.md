@@ -13,7 +13,7 @@ Open `index.html` in a browser. That's it.
 ```
 index.html        all content & sections
 css/styles.css    design system (tokens at the top) + all components
-js/main.js        nav, reveals, parallax, slider, form, image fallbacks
+js/main.js        nav, reveals, parallax, slider, image fallbacks
 assests/          logo.jpg + hero_image.png (the two real brand assets)
 ```
 
