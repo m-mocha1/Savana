@@ -1,9 +1,19 @@
-/* Savana — Restaurant & Caffe · interactions */
+/* Savana — مطعم وكافيه · interactions
+   Runs after js/i18n.js (deferred, order preserved), so the DOM — including
+   the data-rendered dishes, gallery and testimonials — is already populated
+   and translated by the time this executes. */
 (() => {
   "use strict";
 
   const prefersReducedMotion =
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* translation helper — falls back gracefully if i18n didn't load */
+  const t = (key, fallback) => {
+    const fn = window.SAVANA && window.SAVANA.t;
+    const val = fn ? fn(key) : null;
+    return val && val !== key ? val : fallback;
+  };
 
   /* ---------- Header: solid after scrolling past the hero's top ---------- */
   const header = document.getElementById("site-header");
@@ -17,7 +27,10 @@
 
   const setMenu = (open) => {
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    toggle.setAttribute(
+      "aria-label",
+      open ? t("nav.close", "Close menu") : t("nav.open", "Open menu")
+    );
     overlay.classList.toggle("is-open", open);
     overlay.setAttribute("aria-hidden", String(!open));
     document.body.classList.toggle("menu-open", open);
@@ -107,7 +120,10 @@
       dot.className = "quotes__dot";
       dot.type = "button";
       dot.setAttribute("role", "tab");
-      dot.setAttribute("aria-label", `Testimonial ${i + 1}`);
+      dot.setAttribute(
+        "aria-label",
+        `${t("testimonials.title", "Testimonial")} ${i + 1}`
+      );
       dot.addEventListener("click", () => go(i, true));
       dotsWrap.appendChild(dot);
       return dot;
@@ -128,13 +144,15 @@
 
     const restart = () => {
       clearInterval(timer);
-      if (!prefersReducedMotion) {
+      if (!prefersReducedMotion && slides.length > 1) {
         timer = setInterval(() => go(index + 1), 6500);
       }
     };
 
-    slider.querySelector("[data-prev]").addEventListener("click", () => go(index - 1, true));
-    slider.querySelector("[data-next]").addEventListener("click", () => go(index + 1, true));
+    const prev = slider.querySelector("[data-prev]");
+    const next = slider.querySelector("[data-next]");
+    if (prev) prev.addEventListener("click", () => go(index - 1, true));
+    if (next) next.addEventListener("click", () => go(index + 1, true));
     slider.addEventListener("mouseenter", () => clearInterval(timer));
     slider.addEventListener("mouseleave", restart);
     document.addEventListener("visibilitychange", () =>
@@ -169,12 +187,12 @@
       },
       { once: true }
     );
-    // handle images that already failed before this script ran
     if (img.complete && img.naturalWidth === 0) {
       img.dispatchEvent(new Event("error"));
     }
   });
 
   /* ---------- Footer year ---------- */
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
