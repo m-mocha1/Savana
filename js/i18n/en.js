@@ -17,7 +17,7 @@ window.SAVANA_I18N.locales.en = {
   strings: {
     "meta.title": "Savana — Restaurant & Caffe · Beit Jala, Bethlehem",
     "meta.description":
-      "Savana — Restaurant & Caffe on the hilltop of Beit Jala: Levantine flame cooking, slow coffee and sunset views over the hills of Bethlehem.",
+      "A restaurant description for search engines here",
 
     "a11y.skip": "Skip to content",
     "brand.aria": "Savana — home",
@@ -42,18 +42,18 @@ window.SAVANA_I18N.locales.en = {
     "hero.script": "The finest flavours",
     "hero.kicker": "Restaurant & Caffe",
     "hero.lede":
-      "A hilltop table in Ras Beit Jala — Levantine flame cooking, slow coffee, and sunsets that stay for dessert.",
+      "A short restaurant description here",
 
     "menu.eyebrow": "From the fire",
     "menu.title": "Signature Dishes",
-    "menu.note": "A taste of the kitchen — the full menu lives at the table",
+    "menu.note": "A note about the menu here",
 
     "about.eyebrow": "Our story",
     "about.title": "A table on the ridge of Beit Jala",
     "about.p1":
-      "Savana stands in a tower of golden Jerusalem stone at the top of Ras Beit Jala, where the streets end and the hills begin. In the evening the valley turns amber, our sign turns green, and the taboon fire is already glowing.",
+      "First paragraph of the restaurant story here",
     "about.p2":
-      "We took our name from the acacia of the savanna — the tree that offers its shade to everyone who passes. That is the house we keep: bread from the stone oven, meat over olive-wood coals, coffee poured slowly, and a terrace where no one is in a hurry.",
+      "Second paragraph of the restaurant story here",
     "about.stat.est": "Est.",
     "about.stat.estVal": "2018",
     "about.stat.seats": "Terrace seats",
@@ -85,7 +85,7 @@ window.SAVANA_I18N.locales.en = {
     "contact.map.name": "Savana · Arab Society Street",
     "contact.map.soon": "Interactive map coming soon",
 
-    "footer.tag": "Fire, stone & the last light.",
+    "footer.tag": "A restaurant tagline here",
     "footer.brandAr": "سافانا — مطعم وكافيه · بيت جالا",
     "footer.logoAlt": "Savana — Restaurant & Caffe logo on marble",
     "footer.explore": "Explore",
@@ -102,12 +102,12 @@ window.SAVANA_I18N.locales.en = {
 
   /* Text only — images & prices come from ar.js, in the same order. */
   dishes: [
-    { tag: "To begin", name: "Mezze Sunset Board", desc: "Silked hummus, smoked baba ghanoush, olive tapenade and warm taboon bread from our stone oven.", alt: "Board of mezze with warm bread and olive oil" },
-    { tag: "From the garden", name: "Hilltop Harvest", desc: "Wild greens, pomegranate, candied walnuts and labneh under a bright sumac vinaigrette.", alt: "Fresh green salad with pomegranate seeds" },
-    { tag: "Over charcoal", name: "Savana Mixed Grill", desc: "Lamb kofta, chicken shish and rib-eye skewers with charred onion, grilled tomato and garlic toum.", alt: "Skewers of grilled meat over open flame" },
-    { tag: "Slow-fired", name: "Smoked Short Ribs", desc: "Twelve hours over olive-wood smoke, finished with a date and carob glaze. For two.", alt: "Slow-cooked short ribs with a dark glaze" },
-    { tag: "From the sea", name: "Ember-Grilled Salmon", desc: "Charcoal-kissed fillet, burnt lemon, green tahini and herbs from the terrace planters.", alt: "Grilled salmon fillet with herbs" },
-    { tag: "Sweet ending", name: "Knafeh & Kahwa", desc: "Warm knafeh with crushed pistachio, poured with orange-blossom syrup and cardamom coffee.", alt: "Cup of cardamom coffee beside dessert" },
+    { tag: "To begin", name: "Mezze Sunset Board", desc: "A dish description here", alt: "Board of mezze with warm bread and olive oil" },
+    { tag: "From the garden", name: "Hilltop Harvest", desc: "A dish description here", alt: "Fresh green salad with pomegranate seeds" },
+    { tag: "Over charcoal", name: "Savana Mixed Grill", desc: "A dish description here", alt: "Skewers of grilled meat over open flame" },
+    { tag: "Slow-fired", name: "Smoked Short Ribs", desc: "A dish description here", alt: "Slow-cooked short ribs with a dark glaze" },
+    { tag: "From the sea", name: "Ember-Grilled Salmon", desc: "A dish description here", alt: "Grilled salmon fillet with herbs" },
+    { tag: "Sweet ending", name: "Knafeh & Kahwa", desc: "A dish description here", alt: "Cup of cardamom coffee beside dessert" },
   ],
 
   gallery: [
@@ -122,8 +122,8 @@ window.SAVANA_I18N.locales.en = {
   ],
 
   testimonials: [
-    { quote: "We came for the sunset and stayed until the candles. The mixed grill is the best I've had anywhere.", name: "Rania Khoury", place: "Bethlehem" },
-    { quote: "Golden stone, green light, and knafeh straight from the fire. Savana feels like a celebration every time.", name: "Elias Handal", place: "Beit Jala" },
-    { quote: "The finest place for a family evening — warm service, a breathtaking view, and Arabic coffee like no other.", name: "Nour Awad", place: "Beit Sahour" },
+    { quote: "A guest testimonial here", name: "Rania Khoury", place: "Bethlehem" },
+    { quote: "A guest testimonial here", name: "Elias Handal", place: "Beit Jala" },
+    { quote: "A guest testimonial here", name: "Nour Awad", place: "Beit Sahour" },
   ],
 };
